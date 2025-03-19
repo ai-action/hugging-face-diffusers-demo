@@ -1,4 +1,6 @@
-# hugging-face-diffusers-demo
+# Hugging Face diffusers demo
+
+[![build](https://github.com/ai-action/hugging-face-diffusers-demo/actions/workflows/build.yml/badge.svg)](https://github.com/ai-action/hugging-face-diffusers-demo/actions/workflows/build.yml)
 
 🤗 Hugging Face diffusers demo based on the [tutorial](https://huggingface.co/docs/diffusers/main/en/tutorials/autopipeline).
 
