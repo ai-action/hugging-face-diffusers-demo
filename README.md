@@ -23,7 +23,7 @@ git clone https://github.com/ai-action/hugging-face-diffusers-demo.git
 cd hugging-face-diffusers-demo
 ```
 
-Create the [virtualenv](https://docs.python-guide.org/dev/virtualenvs/):
+Create the [virtualenv](https://docs.python.org/3/library/venv.html):
 
 ```sh
 python3 -m venv .venv
