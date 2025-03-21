@@ -1,15 +1,12 @@
-name: build
-on: push
-
-permissions:
-  contents: read
-
-env:
-  DISABLE_TELEMETRY: YES
+name: text-to-image
+on: [push, workflow_dispatch]
 
 jobs:
-  build:
+  text-to-image:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -25,9 +22,8 @@ jobs:
 
       - name: Text-to-image
         run: python text_to_image.py
-
-      - name: Image-to-image
-        run: python image_to_image.py
+        env:
+          DISABLE_TELEMETRY: YES
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
