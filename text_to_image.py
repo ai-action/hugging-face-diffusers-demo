@@ -1,7 +1,6 @@
 from diffusers import AutoPipelineForText2Image
 from random import randint
 from sys import maxsize
-from time import time
 import torch
 
 if torch.cuda.is_available():

@@ -36,11 +36,23 @@ pip3 install -r requirements.txt
 
 ## Run
 
-[Text to image](https://huggingface.co/docs/diffusers/main/en/tutorials/autopipeline?autopipeline=text-to-image):
+### Text-to-Image
+
+[Text-to-image](https://huggingface.co/docs/diffusers/main/en/tutorials/autopipeline?autopipeline=text-to-image):
 
 ```sh
 python3 text_to_image.py
 ```
+
+### Image-to-Image
+
+[Image-to-image](https://huggingface.co/docs/diffusers/main/en/tutorials/autopipeline?autopipeline=image-to-image):
+
+```sh
+python3 image_to_image.py
+```
+
+### Disable Telemetry
 
 [Disable telemetry](https://huggingface.co/docs/diffusers/v0.21.0/en/installation#notice-on-telemetry-logging):
 

@@ -4,6 +4,9 @@ on: push
 permissions:
   contents: read
 
+env:
+  DISABLE_TELEMETRY: YES
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -20,8 +23,11 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Text to image
-        run: DISABLE_TELEMETRY=YES python text_to_image.py
+      - name: Text-to-image
+        run: python text_to_image.py
+
+      - name: Image-to-image
+        run: python image_to_image.py
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
