@@ -1,0 +1,33 @@
+name: inpainting
+on: [push, workflow_dispatch]
+
+jobs:
+  inpainting:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          cache: pip
+          python-version: 3
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Inpainting
+        run: python inpainting.py
+        env:
+          DISABLE_TELEMETRY: YES
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: artifact
+          path: |
+            *.png
