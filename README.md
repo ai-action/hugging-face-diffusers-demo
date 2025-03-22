@@ -4,7 +4,7 @@
 [![image-to-image](https://github.com/ai-action/hugging-face-diffusers-demo/actions/workflows/image-to-image.yml/badge.svg)](https://github.com/ai-action/hugging-face-diffusers-demo/actions/workflows/image-to-image.yml)
 [![inpainting](https://github.com/ai-action/hugging-face-diffusers-demo/actions/workflows/inpainting.yml/badge.svg)](https://github.com/ai-action/hugging-face-diffusers-demo/actions/workflows/inpainting.yml)
 
-🤗 Hugging Face diffusers demo based on the [tutorial](https://huggingface.co/docs/diffusers/main/tutorials/autopipeline).
+🤗 Hugging Face diffusers demo based on the [tutorial](https://huggingface.co/docs/diffusers/main/tutorials/autopipeline). Read the [blog post](https://remarkablemark.org/blog/2025/03/21/how-to-run-hugging-face-stable-diffusion-ai-model-on-mac/) or [Medium story](https://medium.com/@remarkablemark/how-to-run-hugging-face-stable-diffusion-on-mac-1076bf53083d).
 
 ## Prerequisites
 
