@@ -33,7 +33,7 @@ source .venv/bin/activate
 Install the dependencies:
 
 ```sh
-pip3 install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 ## Run
@@ -43,7 +43,7 @@ pip3 install -r requirements.txt
 [Text-to-image](https://huggingface.co/docs/diffusers/main/tutorials/autopipeline?autopipeline=text-to-image):
 
 ```sh
-python3 text_to_image.py
+python text_to_image.py
 ```
 
 ### Image-to-Image
@@ -51,7 +51,7 @@ python3 text_to_image.py
 [Image-to-image](https://huggingface.co/docs/diffusers/main/tutorials/autopipeline?autopipeline=image-to-image):
 
 ```sh
-python3 image_to_image.py
+python image_to_image.py
 ```
 
 ### Inpainting
@@ -59,15 +59,15 @@ python3 image_to_image.py
 [Inpainting](https://huggingface.co/docs/diffusers/main/tutorials/autopipeline?autopipeline=inpainting):
 
 ```sh
-python3 inpainting.py
+python inpainting.py
 ```
 
 ### Disable Telemetry
 
-[Disable telemetry](https://huggingface.co/docs/diffusers/main/installation#telemetry-logging):
+[Disable telemetry](https://huggingface.co/docs/huggingface_hub/package_reference/environment_variables#donottrack):
 
 ```sh
-DISABLE_TELEMETRY=YES python3 text_to_image.py
+DO_NOT_TRACK=1 python text_to_image.py
 ```
 
 ### Clear Cache
